@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ca.edumedia.ioud0001.midterm" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>A.Interactions</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="ioud0001@algonquinlive.com" href="http://cordova.io">
+        Anna Ioudovskaya - Cordova Midterm project
+    </author>
+	<icon src="www/img/icon_48a.png" density="mdpi" />
+  <icon src="www/img/icon_72.png" density="hdpi" />
+  <icon src="www/img/icon_96.png" density="xhdpi" />
+  <icon src="www/img/icon_192.png" density="xxhdpi" />
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

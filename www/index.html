@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Let's find stuff!</title>
+    </head>
+    <body>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    
+        <!--<script type="text/javascript" src="js/geo.js"></script>-->
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9nw6l3m3o5KICgtS4yuQg7jeR9e4f2m4">
+</script>
+
+        <!--
+        <script type="text/javascript" src="js/getcontacts.js"></script>
+        <script type="text/javascript" src="js/sample.js"></script>
+        
+        --><script type="text/javascript" src="js/hammer.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/geo.js"></script>
+        <script type="text/javascript" src="js/getcontacts.js"></script>
+        
+        <!--<script type="text/javascript" src="js/app.js"></script>-->
+        
+        <div class="app">
+           <header class="apptitle">
+           <h1>Welcome to A.Interactions</h1>
+           </header>
+<!-- tabbed navigation bar -->
+<nav class="tabs">
+  <ul>
+    <li class="li-1-3"><a href="#home" data-role="link" class="activetab" data-transition="slide" id="svghome"><span class="hidden" title="Home">Home</span>
+    </a></li>
+    <!--<li class="li-1-3"><a href="sample.html" data-role="link"><span title="Sample">Sample</span>
+    </a></li>
+    -->
+  </ul>
+</nav>
+<div class="page-wrap">
+<div data-role="page" id="home">
+ <div data-role="content" data-overlay-theme="b">
+  	<h1>Contacts</h1>
+    <div id="showcontacts">contacts will appear here...</div>
+   </div>
+</div>
+<div data-role="overlay">&nbsp;</div>
+<div data-role="modal">
+        <form id="modal">
+        <p><a href="#" onClick="javascript:goback()">Go back</a></p>
+        Name: <input type="text" id="name" />
+        <div class="divInput"></div>
+        </form>
+</div>
+<div data-role="page" id="divmap">
+ <div data-role="content" data-overlay-theme="b">
+  	<h1>Location </h1>
+    <p><a href="#" onClick="javascript:goback()">Go back</a></p>
+    <div id="theMap"  style="width:320px;height:300px;">
+   </div>
+</div>
+<section data-role="footer" id="footer" data-overlay-theme="b">
+<footer class="site-footer">
+ <p>&copy; Anna Ioudovskaya 2015. All rights reserved.</p>
+</footer>
+</section>
+        </div>
+        
+    </body>
+</html>
+
