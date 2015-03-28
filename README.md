@@ -1,13 +1,13 @@
 #Introduction 
 This project tests the interactions of the touch features of a device. 
 
-#Milestones: 
+##Milestones: 
 I completed the map, and the contacts, and the tap and double tap works 
 
-#Ongoing changes: 
+##Ongoing changes: 
 I will continue to fix the modal save to local storage from the JSON file and the output of a contact's information when that contact is clicked. 
 
-#Scripts: 
+##Scripts: 
 - Everything is in main.js. 
 - I have the Geolocation inside geo.js;
 - Contacts are loaded through the getcontacts.js. 
